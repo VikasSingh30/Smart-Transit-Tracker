@@ -2,6 +2,8 @@
 
 **SmartTransitTracker** is a modern web application that dynamically visualizes nearby transit stops using your live geolocation, optimized background processing, and responsive canvas rendering.
 
+[![Live Demo](https://img.shields.io/badge/SMART_TRANSIT_TRACKER-LIVE_DEMO_🚌-informational?style=for-the-badge&logo=amazonaws&logoColor=white&color=2bbc8a&labelColor=1a1a2e)](https://smart-transit-tracker.vercel.app/)
+
 ---
 
 ## ✨ Features
