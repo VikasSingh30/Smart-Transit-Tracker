@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Transit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚌 Smart Transit Tracker</h1>
+            <p>Real-time transit tracking with intelligent performance optimization</p>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-item">
+                <div class="status-dot" id="locationStatus"></div>
+                <span id="locationText">Location: Loading...</span>
+            </div>
+            <div class="status-item">
+                <div class="status-dot" id="networkStatus"></div>
+                <span id="networkText">Network: Checking...</span>
+            </div>
+            <div class="status-item">
+                <div class="status-dot" id="performanceStatus"></div>
+                <span id="performanceText">Performance: Optimal</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="map-container">
+                <h3>Transit Map</h3>
+                <canvas id="transitMap" class="map-canvas"></canvas>
+            </div>
+
+            <div class="transit-list">
+                <h3>Nearby Transit Stops</h3>
+                <div id="transitStops">
+                    <div class="loading">Loading transit information...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" id="refreshBtn">🔄 Refresh</button>
+            <button class="btn" id="centerBtn">📍 Center on Me</button>
+            <button class="btn" id="optimizeBtn">⚡ Optimize Performance</button>
+            <button class="btn" id="backgroundBtn">🔄 Background Updates</button>
+        </div>
+
+        <div class="performance-info">
+            <h3>Performance Metrics</h3>
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <div class="performance-value" id="backgroundTasks">0</div>
+                    <div class="performance-label">Background Tasks</div>
+                </div>
+                <div class="performance-card">
+                    <div class="performance-value" id="visibleStops">0</div>
+                    <div class="performance-label">Visible Stops</div>
+                </div>
+                <div class="performance-card">
+                    <div class="performance-value" id="dataUsage">0 KB</div>
+                    <div class="performance-label">Data Usage</div>
+                </div>
+                <div class="performance-card">
+                    <div class="performance-value" id="lastUpdate">Never</div>
+                    <div class="performance-label">Last Update</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
